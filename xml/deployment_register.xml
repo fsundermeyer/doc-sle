@@ -280,6 +280,25 @@
      </para>
     </step>
    </procedure>
+
+   <tip>
+    <title>Categorize systems by applying labels</title>
+    <para>
+     To categorize a system in &scc; labels can be assigned while registering using the
+     <literal>--set-labels</literal> flag.
+    </para>
+    <screen>&prompt.user;sudo SUSEConnect -r <replaceable>REGISTRATION_CODE</replaceable> -e <replaceable>EMAIL_ADDRESS</replaceable> --set-labels <replaceable>LABELS</replaceable></screen>
+    <para>
+     Replace <replaceable>LABELS</replaceable> with the label names which should be assigned.
+     Multiple labels can be assigned using a comma seperated list. For information on that topic, refer to the inline documentation with
+     <command>man 8 SUSEConnect</command>
+    </para>
+    <para>
+     For example assigning two labels while registering:
+    </para>
+    <screen>&prompt.user;sudo SUSEConnect -r <replaceable>REGISTRATION_CODE</replaceable> --set-labels testing,"Label with space"</screen>
+   </tip>
+
   </sect2>
  </sect1>
  <sect1 xml:id="sec-register-sle-add-modules">
